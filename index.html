@@ -163,12 +163,13 @@
         <p class="eyebrow">Contact</p>
         <h2>Talk to our team</h2>
       </div>
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Email Address" required />
-        <input type="text" placeholder="Company Name" />
-        <textarea placeholder="Tell us about your requirement" rows="5"></textarea>
+      <form class="contact-form" id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <input type="text" name="company" placeholder="Company Name" />
+        <textarea name="message" placeholder="Tell us about your requirement" rows="5"></textarea>
         <button type="submit" class="btn primary">Submit Inquiry</button>
+        <p class="form-status" id="formStatus" aria-live="polite"></p>
       </form>
     </section>
   </main>
